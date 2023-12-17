@@ -15,7 +15,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 30px;
 }
 
@@ -23,11 +23,15 @@ body {
     font-size: 3rem;
 }
 
+.material-symbols-outlined {
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+
 .menu-items,
 .setting-items {
     display: grid;
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+    font-size: 1.3rem;
 }
 
 .menu-items > div,
@@ -37,11 +41,89 @@ body {
     margin: 8px 0;
 }
 
-.material-symbols-outlined {
-    font-size: 2rem;
-    margin-right: 8px;
+.menu-items {
+    margin-bottom: 30px;
 }
 
 .main {
+    height: 100vh;
     background-color: #e2e8f0;
+    display: grid;
+    grid-template-rows: 80px 100px 1fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+.search {
+    background-color: #ffffff;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.left-part-search {
+    display: flex;
+    align-items: center;
+    padding: 0 64px;
+}
+
+.right-part-search,
+.profile-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 64px;
+    gap: 30px;
+}
+
+.profile {
+    background-color: #ffffff;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-part-profile {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    padding-left: 64px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.greeting div:first-child {
+    font-size: 1rem;
+}
+
+.profile-buttons button {
+}
+
+.projects {
+    background-color: green;
+}
+
+.aside {
+    background-color: yellow;
+}
+
+img {
+    border-radius: 100px;
+}
+
+input {
+    border-radius: 16px;
+    border: none;
+    background-color: #e2e8f0;
+    height: 28px;
+    width: 550px;
+    /* margin: 0 30px; */
+}
+
+button {
+    background-color: #1992d4;
+    border: none;
+    border-radius: 30px;
+    height: 36px;
+    width: 90px;
+    color: #ffffff;
+    font-weight: bold;
 }
