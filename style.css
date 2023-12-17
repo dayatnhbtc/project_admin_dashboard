@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    grid-template: 100vh / 300px 1fr;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+    background-color: #1992d4;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.logo .material-symbols-outlined {
+    font-size: 3rem;
+}
+
+.menu-items,
+.setting-items {
+    display: grid;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.menu-items > div,
+.setting-items > div {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.material-symbols-outlined {
+    font-size: 2rem;
+    margin-right: 8px;
+}
+
+.main {
+    background-color: #e2e8f0;
+}
